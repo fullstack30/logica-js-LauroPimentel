@@ -1,3 +1,6 @@
 function hello(frase = "World") {
-    return "Hello, World" + frase + "!";
+    if (typeof frase != 'string') {
+        frase = "World";
+    }
+    return "Hello, " + frase + "!";
 }
