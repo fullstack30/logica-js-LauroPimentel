@@ -1,7 +1,7 @@
 // src/soma_impar.js
 
 function soma_impar(numero) {
-  if (Number.isInteger(numero) && numero > 0) {
+  if (Number.isInteger(numero) && numero >= 0) {
     let somaImpares = 0;
 
     for (let i = 1; i <= numero; i += 2) {
@@ -9,8 +9,10 @@ function soma_impar(numero) {
     }
 
     return somaImpares;
+  } else if (numero === 0) {
+    return 0;
   } else {
-    return "Função aceita apenas números inteiros positivos.";
+    return "Função aceita apenas números inteiros não-negativos.";
   }
 }
 
