@@ -1,4 +1,3 @@
-// src/soma_impar.js
 
 function soma_impar(numero) {
   if (Number.isInteger(numero) && numero >= 0) {
@@ -12,7 +11,7 @@ function soma_impar(numero) {
   } else if (numero === 0) {
     return 0;
   } else {
-    return "Função aceita apenas números inteiros não-negativos.";
+    return "Função aceita apenas números inteiros não-negativos e zero.";
   }
 }
 
