@@ -1,9 +1,11 @@
+
+
 function somaImparesAteN(numero) {
-    
+    // Verifica se o argumento é um número inteiro positivo
     if (Number.isInteger(numero) && numero > 0) {
       let somaImpares = 0;
   
-      
+      // Itera de 1 até o número informado, somando os números ímpares
       for (let i = 1; i <= numero; i += 2) {
         somaImpares += i;
       }
@@ -14,7 +16,7 @@ function somaImparesAteN(numero) {
     }
   }
   
-  
+  // Exemplo de uso:
   const numeroInformado = 10;
   const resultado = somaImparesAteN(numeroInformado);
   
@@ -23,4 +25,3 @@ function somaImparesAteN(numero) {
   } else {
     console.log(resultado);
   }
-  
